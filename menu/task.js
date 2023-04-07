@@ -10,7 +10,10 @@
                     el.className = "menu menu_sub";
                 };
             };
-            activate.className += " menu_active";
+            if (activate.className == "menu menu_sub menu_active") {
+                activate.className = "menu menu_sub";
+            } else {activate.className += " menu_active";
+            };
             return false;
         };
     };

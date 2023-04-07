@@ -14,6 +14,7 @@
     for (let i = 0; i < close.length; i++) {
         close[i].onclick = () => {
             show2.className = "modal";
+            popup.className = "modal";
         };
     };
 })();
