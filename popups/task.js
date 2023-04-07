@@ -7,12 +7,12 @@
     popup.className += " modal_active";
 
     show[0].onclick = () => {
+        popup.className = "modal";
         show2.className += " modal_active";
     };
 
     for (let i = 0; i < close.length; i++) {
         close[i].onclick = () => {
-            popup.className = "modal";
             show2.className = "modal";
         };
     };
